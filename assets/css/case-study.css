@@ -1,0 +1,23 @@
+.case-study{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.case-study > *:first-child{
+    flex: 1 1 30%;
+    padding-right: 2em;
+}
+
+.case-study > *{
+    flex: 1 1 60%;
+    max-width: 60%;
+
+    box-sizing: border-box;
+}
+
+.case-study > *:last-child{
+    min-width: 100%;
+    flex: 0 0 100%;
+}

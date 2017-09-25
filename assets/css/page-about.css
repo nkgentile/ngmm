@@ -1,0 +1,41 @@
+#about{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#about > *{
+    flex: 1 1 40em;
+}
+
+#profile{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#profile > *{
+    flex: 1 1 60%;
+    box-sizing: border-box;
+}
+
+#profile > *:first-child{
+    flex: 0 0 30%;
+    padding-right: 2em;
+}
+
+#headshot{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 5em;
+}
+
+#headshot > img{
+    width: 15em;
+    height: 15em;
+    border-radius: 100%;
+}

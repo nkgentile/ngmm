@@ -1,0 +1,62 @@
+.ring,
+.arc{
+    stroke-width: 1.5em;
+    fill: none;
+    cursor: pointer;
+}
+.arc{
+    stroke-dasharray: 2000;
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+}
+
+.arc.hidden{
+    opacity: 0;
+}
+
+.ring{
+    stroke: rgba(0, 0, 0, 0.05);
+}
+
+#skills{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.skill > figcaption{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.skill > figcaption > *{
+    flex: 1 1 50%;
+}
+
+.skill{
+    flex: 0 0 50%;
+    min-width: 10em;
+    min-height: 20em;
+    margin: 0;
+}
+
+.label{
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+.label.transparent{
+    opacity: 0.25;
+}
+
+.label > span:first-child{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 1em;
+}

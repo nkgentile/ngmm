@@ -1,0 +1,10 @@
+#portfolio{
+}
+
+#portfolio > *{
+    flex: 1 1 25vw;
+    min-width: 20em;
+    height: 20vw;
+    min-height: 15em;
+    margin: 1px;
+}

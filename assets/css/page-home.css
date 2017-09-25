@@ -1,0 +1,29 @@
+#home{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    max-height: 50em;
+}
+
+#home > *{
+    flex: 0 0 50%;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#home > *:first-child{
+}
+
+#home > *:last-child{
+}
+
+#dodecahedron{
+    min-width: 20em;
+    min-height: 20em;
+}

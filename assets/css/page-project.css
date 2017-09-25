@@ -1,0 +1,8 @@
+#project{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#project > *{
+    flex: 1 1 100%;
+}
