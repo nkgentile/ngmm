@@ -1,8 +1,13 @@
 #project{
     display: flex;
     flex-flow: row wrap;
+    position: relative;
 }
 
 #project > *{
     flex: 1 1 100%;
+}
+
+#project .gallery{
+    height: 30em;
 }

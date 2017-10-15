@@ -1,6 +1,6 @@
 'use strict';
 
-Vue.component('gallery-block', {
+Vue.component('project-gallery', {
     props: {
         assets: {
             type: Array,
@@ -10,6 +10,7 @@ Vue.component('gallery-block', {
     
     mounted(){
         var handler = new Hammer(this.$el);
+
         handler.on('swipeleft', e => this.increment());
         handler.on('swiperight', e => this.decrement());
     },
@@ -51,6 +52,7 @@ Vue.component('gallery-block', {
             ></gallery-slider>
             <slideshow-event-container
                 :index="index"
+                :color="assets[index].color"
                 :next="increment"
                 :prev="decrement"
                 :click="()=>{}"
@@ -81,7 +83,12 @@ Vue.component('gallery-slider', {
     template: `
         <div class="slider" :style="{ transform: translation }">
             <figure v-for="s in slides">
-                <img :src="s"/>
+                <img :src="s.source"/>
+                <figcaption
+                    :style="{ color: s.color }"
+                    v-html="s.caption"
+                >
+                </figcaption>
             </figure>
         </div>
     `

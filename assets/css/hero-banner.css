@@ -1,12 +1,13 @@
 .hero-banner{
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 
     position: relative;
     box-sizing: border-box;
     min-height: 30em;
+    height: 100vh;
 }
 
 .hero-banner > *{

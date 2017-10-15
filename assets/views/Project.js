@@ -31,11 +31,10 @@ const Project = Vue.extend({
                     </a>
                 </h4>
             </hero-banner>
-            <case-study :images="project.images">
+            <case-study v-if="false" :images="project.images">
                 <ul slot="goals" v-html="project.goals"></ul>
                 <div slot="problem" v-html="project.problem"></div>
                 <div slot="solution" v-html="project.solution"></div>
-
             </case-study>
         </section>
     `
